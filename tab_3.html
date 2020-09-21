@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#Chatbot{margin-left: 70%;}
+
+
+</style>
+</head>
+<body style="background-color:#B3B6B7;">
+
+<h1 style="text-align:center;font:bold;color:#A93226;">Status Quo</h1>
+
+<div class="tab" style="background-color:#35498e;">
+  <button class="tablinks" onclick="openCity(event, 'Home page')">Home page</button>
+  <button class="tablinks" onclick="openCity(event, 'Dashboard')">Dashboard</button>
+  <button class="tablinks" onclick="openCity(event, 'Chatbot')">Chatbot</button>
+</div>
+
+<div id="Home page" class="tabcontent" style="display:block;"
+
+  <p> Let me  start with the qoute below:<br><br>
+    “Life is all about It’s about small, daily input of selected, high-quality thoughts and wisdom.”<br><br>
+The Day to day life of common man is changing everyday and we are  into a very fast paced life.<br>
+There are a number of people dying and suffering due a numerous personal issue.<br>
+The modern world has also given people the gift of importance!<br>
+Social media  is nothing but making people realise that their voice is important.<br>
+Governments are made and brought down social media.
+There are numerours good things happening due to social media uplift but we are going to analyze , <br>
+visualize and talk about the rising ‘new world’ problem<br>
+ - “HATE SPEECH
+.</p>
+</div>
+
+<div id="Dashboard" class="tabcontent">
+
+
+  <html>
+      <head>
+          <title>tableau</title>
+      </head>
+      <body>
+
+          <div class='tableauPlaceholder' id='viz1600696219526' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HateCrimesinUS&#47;Page1_HateCrime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HateCrimesinUS&#47;Page1_HateCrime' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ha&#47;HateCrimesinUS&#47;Page1_HateCrime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1600696219526');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1077px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+      </body>
+  </html>
+</div>
+
+<div id="Chatbot" class="tabcontent">
+  <p style="text-align:left:70%;">Learn for free</p>
+  <h3>Chatbot</h3>
+
+  <iframe
+allow="microphone;"
+width="350"
+height="410"
+src="https://console.dialogflow.com/api-client/demo/embedded/bf1484cb-97cc-4c43-9970-7c0da590e753">
+ </iframe>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
